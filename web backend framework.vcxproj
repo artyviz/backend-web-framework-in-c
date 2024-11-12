@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClCompile Include="birchutils.c" />
     <ClCompile Include="server.c" />
+    <ClCompile Include="server.cpp" />
     <ClCompile Include="webdev.h" />
     <ClCompile Include="web backend framework.cpp" />
   </ItemGroup>
