@@ -1,18 +1,18 @@
 # Web Backend Framework
 
-This is a simple web backend framework that sets up a server, handles client connections, and supports network communication using sockets. The framework is designed to be lightweight and efficient for learning and development purposes.
+This is a simple web backend framework designed to set up a server, handle client connections, and support network communication using sockets. It's lightweight and efficient, primarily aimed at learning and development purposes.
 
 ## Features
 
-- **Socket-based server setup**: Configures a server to accept client connections.
-- **Network communication**: Handles data transmission between client and server using buffers.
-- **Cross-platform**: Works on both Windows (using WinSock) and Linux (using POSIX sockets).
-- **Simple Logging**: Logs server events and errors.
-- **Modular design**: Easy to extend for more advanced features such as multi-threading and database integration.
+- **Socket-based server setup**: Configures a server to accept and manage client connections.
+- **Network communication**: Efficient data transmission between client and server using buffers.
+- **Cross-platform compatibility**: Works on both Windows (using WinSock) and Linux (using POSIX sockets).
+- **Simple Logging**: Logs server events and errors for debugging and monitoring purposes.
+- **Modular design**: Easily extendable for additional features like multi-threading and database integration.
 
 ## Prerequisites
 
-Before you begin, make sure you have the following installed:
+Ensure you have the following installed:
 
 - **C Compiler**: GCC or MinGW on Windows.
 - **Make**: For building the project.
@@ -24,22 +24,21 @@ Before you begin, make sure you have the following installed:
    ```bash
    git clone https://github.com/artyviz/backend-web-framework-in-c
    cd web-backend-framework
-
 Install dependencies (if any). This project does not require any external dependencies.
 
 Compile the project using make: make
 
-**Usage**
-*To run the server:*
+Usage
+To run the server, execute the following command:
 ./webdev <port> [host]
 
 <port>: The port number the server will listen on (e.g., 8080).
-[host]: The optional host address (defaults to 0.0.0.0 if not provided). If you want to bind to a specific IP, pass it as a second argument.
+[host]: Optional. The host address (defaults to 0.0.0.0 if not provided). If you want to bind to a specific IP address, pass it as a second argument.
+Example:
+To start the server on port 8080, binding to 127.0.0.1, use: ./webdev 8080 127.0.0.1
 
-
-**Example:**
-Start the server on port 8080, binding to 127.0.0.1: ./webdev 8080 127.0.0.1
-
+Project Structure
+The project directory looks as follows:
 /web-backend-framework
 │
 ├── /src
@@ -49,19 +48,19 @@ Start the server on port 8080, binding to 127.0.0.1: ./webdev 8080 127.0.0.1
 │
 ├── /Makefile               # Makefile for building the project
 └── README.md               # Project documentation
-
-
-License
+icense
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Contributing
+If you'd like to contribute:
+
 Fork the repository.
 Create a new branch (git checkout -b feature-name).
 Make your changes.
 Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-name).
+Push to your branch (git push origin feature-name).
 Open a pull request.
 Acknowledgments
 This project is built using standard C and socket programming techniques.
 Inspired by the need to understand low-level server implementation and networking in C.
-For any additional questions or suggestions, feel free to create an issue or contact me directly!
+For additional questions or suggestions, feel free to create an issue or contact me directly!
