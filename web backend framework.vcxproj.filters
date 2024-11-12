@@ -27,6 +27,9 @@
     <ClCompile Include="birchutils.c">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="birchutils.h">
